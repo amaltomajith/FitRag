@@ -530,6 +530,8 @@ Region: {user_row['region']}
 - Always include a general disclaimer advising the user to consult a doctor before starting any intense new fitness or diet program.
 """
 
+    rag_chunks_text = '\n'.join([f"[{i}] {c['document']}" for i, c in enumerate(rag_chunks, 1)])
+
     system_prompt = f"""You are FitRAG, an expert AI fitness and nutrition coach.
 You are generating a personalized onboarding plan for the user.
 
@@ -537,7 +539,7 @@ You are generating a personalized onboarding plan for the user.
 {profile_summary}
 
 ## Retrieved Knowledge (use these facts to ground your plan)
-{'\n'.join([f"[{i}] {c['document']}" for i, c in enumerate(rag_chunks, 1)])}
+{rag_chunks_text}
 
 ## Instructions
 - Give a warm, brief welcome referencing the user's name, BMI category, and goal.
