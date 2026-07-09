@@ -1,0 +1,272 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+
+  /* Pure black luxury palette */
+  --color-canvas:     #000000;
+  --color-surface-1:  #0a0a0a;
+  --color-surface-2:  #111111;
+  --color-surface-3:  #1a1a1a;
+  --color-surface-4:  #242424;
+  
+  /* Accent — a single restrained silver-white */
+  --color-accent:     #ffffff;
+  --color-accent-dim: rgba(255, 255, 255, 0.55);
+  
+  /* Semantic highlights */
+  --color-highlight:  #e8e8e8;
+  --color-muted:      rgba(255, 255, 255, 0.35);
+  --color-border:     rgba(255, 255, 255, 0.08);
+  --color-border-hi:  rgba(255, 255, 255, 0.14);
+
+  /* Keep these for backward compat of existing brand names */
+  --color-brand-teal:   #e8e8e8;
+  --color-brand-indigo: #a0a0a0;
+}
+
+/* ─── Base ─────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Allow body to scroll on mobile */
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#root {
+  overflow: hidden;
+}
+
+/* ─── Scrollbar ─────────────────────────────────────────── */
+::-webkit-scrollbar       { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+/* ─── Glass layers ──────────────────────────────────────── */
+/* 
+  Three layers of glass depth, inspired by Apple's design language:
+    .glass-panel  — main containers (sidebar, chat panel)
+    .glass-card   — inner cards / list rows
+    .glass-inset  — inset / recessed surfaces (input bg, badges)
+*/
+.glass-panel {
+  background: rgba(14, 14, 14, 0.82);
+  backdrop-filter: blur(40px) saturate(1.4);
+  -webkit-backdrop-filter: blur(40px) saturate(1.4);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow:
+    0 0 0 0.5px rgba(255,255,255,0.04) inset,
+    0 32px 64px rgba(0,0,0,0.7),
+    0 8px 24px rgba(0,0,0,0.5);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.055);
+  border-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+
+.glass-inset {
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(8px);
+}
+
+/* ─── Divider ───────────────────────────────────────────── */
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.07) 30%, rgba(255,255,255,0.07) 70%, transparent);
+}
+
+/* ─── Typography helpers ────────────────────────────────── */
+.text-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, rgba(255,255,255,0.55) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.label-caps {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.3);
+}
+
+/* ─── Buttons & gradients ───────────────────────────────── */
+.bg-gradient-primary {
+  background: linear-gradient(145deg, #2a2a2a 0%, #1a1a1a 100%);
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.08) inset, 0 4px 12px rgba(0,0,0,0.5);
+}
+
+/* CTA buttons — white fill, black text, very Apple */
+.btn-primary {
+  background: #ffffff;
+  color: #000000;
+  border: none;
+  box-shadow: 0 2px 8px rgba(255,255,255,0.08), 0 8px 24px rgba(0,0,0,0.4);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-primary:hover {
+  background: #f0f0f0;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(255,255,255,0.12), 0 12px 32px rgba(0,0,0,0.5);
+}
+.btn-primary:active {
+  transform: translateY(0);
+  background: #e8e8e8;
+}
+
+/* User message bubble */
+.bg-gradient-user {
+  background: linear-gradient(145deg, #1c1c1e 0%, #2c2c2e 100%);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ─── Animations ────────────────────────────────────────── */
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up {
+  animation: fade-in-up 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes shimmer {
+  from { background-position: -200% center; }
+  to   { background-position: 200% center; }
+}
+
+/* ─── Typing dots ───────────────────────────────────────── */
+@keyframes dot-bounce {
+  0%, 80%, 100% { transform: translateY(0); opacity: 0.25; }
+  40%           { transform: translateY(-4px); opacity: 0.9; }
+}
+.typing-dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.55);
+  animation: dot-bounce 1.4s infinite ease-in-out;
+}
+.typing-dot:nth-child(2) { animation-delay: 0.2s; }
+.typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+/* ─── Input focus ───────────────────────────────────────── */
+.input-glow-focus {
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.input-glow-focus:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.05);
+}
+
+/* ─── Spinner ───────────────────────────────────────────── */
+.spinner {
+  width: 15px;
+  height: 15px;
+  border: 1.5px solid rgba(0, 0, 0, 0.15);
+  border-top-color: #000000;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+.spinner-white {
+  width: 15px;
+  height: 15px;
+  border: 1.5px solid rgba(255,255,255,0.1);
+  border-top-color: rgba(255,255,255,0.7);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ─── Select dropdown fix ───────────────────────────── */
+/*
+  Native <select> shows bright white text on white bg when an
+  option is selected on some browsers. Force dark theming.
+*/
+select {
+  color: rgba(255, 255, 255, 0.75) !important;
+  background-color: #111111 !important;
+  color-scheme: dark;
+}
+select option {
+  background-color: #111111;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 8px 12px;
+}
+select option:checked,
+select option:hover {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+/* ─── Mobile utilities ──────────────────────────────── */
+/* Prevent text size inflation on iOS */
+* { -webkit-text-size-adjust: 100%; }
+
+/* Tap highlight removal */
+a, button, label, select, input {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Smooth momentum scrolling on iOS */
+.overflow-y-auto, .scroll-container {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ─── Pill badges ───────────────────────────────────────── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: 99px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.5);
+}
+
+/* ─── Hover lift utility ────────────────────────────────── */
+.hover-lift {
+  transition: transform 0.2s cubic-bezier(0.4,0,0.2,1), box-shadow 0.2s;
+}
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.5);
+}

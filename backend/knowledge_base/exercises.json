@@ -1,0 +1,352 @@
+[
+  {
+    "name": "Barbell Back Squat",
+    "muscle_group": "Quadriceps, Glutes, Hamstrings, Core",
+    "equipment": "Barbell, Squat Rack",
+    "difficulty": "Intermediate",
+    "cues": [
+      "Brace your core before descending",
+      "Keep chest tall, don't let torso collapse forward",
+      "Drive knees out in line with toes",
+      "Descend until hips are at or below parallel",
+      "Drive through heels on the way up"
+    ],
+    "typical_reps": "3-5 sets of 5-8 reps"
+  },
+  {
+    "name": "Conventional Deadlift",
+    "muscle_group": "Hamstrings, Glutes, Lower Back, Traps",
+    "equipment": "Barbell",
+    "difficulty": "Intermediate",
+    "cues": [
+      "Bar over mid-foot, hip-width stance",
+      "Hinge at hips first, then bend knees to grip",
+      "Lat engagement: imagine bending the bar around your legs",
+      "Push the floor away, don't think about pulling",
+      "Lock hips and knees simultaneously at the top"
+    ],
+    "typical_reps": "3-5 sets of 3-6 reps"
+  },
+  {
+    "name": "Bench Press",
+    "muscle_group": "Pectorals, Anterior Deltoids, Triceps",
+    "equipment": "Barbell, Bench",
+    "difficulty": "Beginner",
+    "cues": [
+      "Arch upper back, shoulder blades retracted and depressed",
+      "Feet flat on floor, full-body tension",
+      "Grip slightly wider than shoulder-width",
+      "Lower bar to lower chest, elbows at 45-60 degrees",
+      "Drive bar up and slightly back over face"
+    ],
+    "typical_reps": "3-4 sets of 6-10 reps"
+  },
+  {
+    "name": "Pull-Up",
+    "muscle_group": "Latissimus Dorsi, Biceps, Rear Deltoids",
+    "equipment": "Pull-Up Bar",
+    "difficulty": "Intermediate",
+    "cues": [
+      "Dead hang to start with full arm extension",
+      "Depress shoulder blades before pulling",
+      "Drive elbows toward hips, not back",
+      "Chin clears the bar at the top",
+      "Control the descent over 2-3 seconds"
+    ],
+    "typical_reps": "3-4 sets of 5-10 reps"
+  },
+  {
+    "name": "Overhead Press",
+    "muscle_group": "Anterior Deltoids, Triceps, Upper Traps, Core",
+    "equipment": "Barbell or Dumbbells",
+    "difficulty": "Intermediate",
+    "cues": [
+      "Grip just outside shoulder width",
+      "Squeeze glutes and brace core throughout",
+      "Push head through the window as bar passes face",
+      "Bar path should be slightly arc, not straight vertical",
+      "Lock out elbows fully at the top"
+    ],
+    "typical_reps": "3-4 sets of 5-8 reps"
+  },
+  {
+    "name": "Dumbbell Romanian Deadlift",
+    "muscle_group": "Hamstrings, Glutes, Lower Back",
+    "equipment": "Dumbbells",
+    "difficulty": "Beginner",
+    "cues": [
+      "Soft knee bend, hinge from hip not waist",
+      "Keep dumbbells close to legs throughout",
+      "Feel stretch in hamstrings before reversing",
+      "Neutral spine, don't round lower back",
+      "Drive hips forward to return to standing"
+    ],
+    "typical_reps": "3 sets of 10-12 reps"
+  },
+  {
+    "name": "Cable Row",
+    "muscle_group": "Rhomboids, Mid Traps, Latissimus Dorsi, Biceps",
+    "equipment": "Cable Machine",
+    "difficulty": "Beginner",
+    "cues": [
+      "Sit tall with slight forward lean at start",
+      "Lead with elbows, not hands",
+      "Squeeze shoulder blades together at full contraction",
+      "Avoid using momentum by swinging torso",
+      "Full stretch at the front of each rep"
+    ],
+    "typical_reps": "3-4 sets of 10-12 reps"
+  },
+  {
+    "name": "Bulgarian Split Squat",
+    "muscle_group": "Quadriceps, Glutes, Hip Flexors",
+    "equipment": "Dumbbells, Bench",
+    "difficulty": "Intermediate",
+    "cues": [
+      "Rear foot elevated on bench, laces down",
+      "Front foot far enough forward so knee doesn't go past toes excessively",
+      "Maintain upright torso throughout",
+      "Lower hips straight down, not forward",
+      "Push through front heel to stand"
+    ],
+    "typical_reps": "3 sets of 8-10 reps per leg"
+  },
+  {
+    "name": "Plank",
+    "muscle_group": "Core, Transverse Abdominis, Glutes",
+    "equipment": "None (Bodyweight)",
+    "difficulty": "Beginner",
+    "cues": [
+      "Forearms on floor, elbows under shoulders",
+      "Body forms a straight line from head to heels",
+      "Squeeze glutes and quads to prevent hip sag",
+      "Breathe steadily, don't hold breath",
+      "Avoid letting hips rise above shoulder level"
+    ],
+    "typical_reps": "3 sets of 30-60 seconds"
+  },
+  {
+    "name": "Hip Thrust",
+    "muscle_group": "Glutes, Hamstrings",
+    "equipment": "Barbell, Bench",
+    "difficulty": "Beginner",
+    "cues": [
+      "Upper back rested on bench edge at shoulder blade level",
+      "Feet flat, hip-width apart",
+      "Drive through heels, squeeze glutes at top",
+      "Chin tucked slightly, no hyperextension of spine",
+      "Hold contraction 1-2 seconds at peak"
+    ],
+    "typical_reps": "3-4 sets of 10-15 reps"
+  },
+  {
+    "name": "Dumbbell Lateral Raise",
+    "muscle_group": "Medial Deltoids",
+    "equipment": "Dumbbells",
+    "difficulty": "Beginner",
+    "cues": [
+      "Slight forward lean from hips",
+      "Lead with elbows, pinkies slightly up",
+      "Raise to shoulder height only, not higher",
+      "Control the descent — don't let weights drop",
+      "Avoid shrugging shoulders during the lift"
+    ],
+    "typical_reps": "3-4 sets of 12-15 reps"
+  },
+  {
+    "name": "Tricep Dip",
+    "muscle_group": "Triceps, Anterior Deltoids, Pectorals",
+    "equipment": "Parallel Bars or Bench",
+    "difficulty": "Beginner",
+    "cues": [
+      "Keep torso upright for tricep focus (leaning forward hits chest more)",
+      "Lower until upper arms are parallel to floor",
+      "Don't flare elbows excessively outward",
+      "Press through palms fully at the top",
+      "Add weight via belt for progressive overload"
+    ],
+    "typical_reps": "3 sets of 8-12 reps"
+  },
+  {
+    "name": "Barbell Curl",
+    "muscle_group": "Biceps, Brachialis",
+    "equipment": "Barbell or EZ-Bar",
+    "difficulty": "Beginner",
+    "cues": [
+      "Stand tall, elbows pinned to sides throughout",
+      "Supinate wrists fully at the top",
+      "Don't swing torso — isolate the bicep",
+      "Control the eccentric (lowering) phase",
+      "Full extension at the bottom each rep"
+    ],
+    "typical_reps": "3 sets of 10-12 reps"
+  },
+  {
+    "name": "Face Pull",
+    "muscle_group": "Rear Deltoids, External Rotators, Rhomboids",
+    "equipment": "Cable Machine, Rope Attachment",
+    "difficulty": "Beginner",
+    "cues": [
+      "Set cable at head height or slightly above",
+      "Pull rope toward face, hands beside ears at the end",
+      "Elbows should be at or above shoulder level",
+      "Focus on external rotation of shoulders",
+      "Great for shoulder health and posture correction"
+    ],
+    "typical_reps": "3-4 sets of 15-20 reps"
+  },
+  {
+    "name": "Goblet Squat",
+    "muscle_group": "Quadriceps, Glutes, Core",
+    "equipment": "Dumbbell or Kettlebell",
+    "difficulty": "Beginner",
+    "cues": [
+      "Hold weight at chest height close to body",
+      "Feet slightly wider than hips, toes turned out 30 degrees",
+      "Sit between heels, deep squat depth",
+      "Elbows inside knees at the bottom to push them out",
+      "Great beginner squat patterning exercise"
+    ],
+    "typical_reps": "3 sets of 10-15 reps"
+  },
+  {
+    "name": "Lat Pulldown",
+    "muscle_group": "Latissimus Dorsi, Biceps, Teres Major",
+    "equipment": "Cable Machine",
+    "difficulty": "Beginner",
+    "cues": [
+      "Grip slightly wider than shoulder width",
+      "Lean back 10-15 degrees, chest up",
+      "Pull bar to upper chest, drive elbows down and back",
+      "Squeeze lats hard at full contraction",
+      "Slow return to full arm extension"
+    ],
+    "typical_reps": "3-4 sets of 10-12 reps"
+  },
+  {
+    "name": "Incline Dumbbell Press",
+    "muscle_group": "Upper Pectorals, Anterior Deltoids, Triceps",
+    "equipment": "Dumbbells, Incline Bench",
+    "difficulty": "Beginner",
+    "cues": [
+      "Bench set at 30-45 degrees",
+      "Dumbbells start at shoulder level, palms forward",
+      "Press up and slightly together at the top",
+      "Don't touch dumbbells at the top — maintain tension",
+      "Lower slowly, feel the upper chest stretch"
+    ],
+    "typical_reps": "3-4 sets of 8-12 reps"
+  },
+  {
+    "name": "Running (Steady State)",
+    "muscle_group": "Cardiovascular System, Quadriceps, Calves, Glutes",
+    "equipment": "None (Outdoor or Treadmill)",
+    "difficulty": "Beginner",
+    "cues": [
+      "Land with foot under center of mass, not out in front",
+      "Slight forward lean from ankles, not waist",
+      "Relax shoulders and jaw — don't tense up",
+      "Arms swing forward-backward, not across body",
+      "Aim for 170-180 steps per minute cadence"
+    ],
+    "typical_reps": "20-45 minutes at conversational pace"
+  },
+  {
+    "name": "Kettlebell Swing",
+    "muscle_group": "Glutes, Hamstrings, Core, Shoulders",
+    "equipment": "Kettlebell",
+    "difficulty": "Intermediate",
+    "cues": [
+      "Hip hinge pattern, not a squat",
+      "Hike bell back between legs before each rep",
+      "Explosive hip snap is the engine — arms just guide",
+      "Bell floats to shoulder height, not overhead",
+      "Squeeze glutes hard at the top position"
+    ],
+    "typical_reps": "3-4 sets of 15-20 reps"
+  },
+  {
+    "name": "Mountain Climber",
+    "muscle_group": "Core, Hip Flexors, Cardiovascular System",
+    "equipment": "None (Bodyweight)",
+    "difficulty": "Beginner",
+    "cues": [
+      "Start in push-up position, wrists under shoulders",
+      "Keep hips level — don't let them rise",
+      "Drive knees toward chest alternately in rapid succession",
+      "Maintain a rigid plank throughout the torso",
+      "Increase speed for a cardio effect"
+    ],
+    "typical_reps": "3 sets of 30-45 seconds"
+  },
+  {
+    "name": "Jump Rope",
+    "muscle_group": "Calves, Cardiovascular System, Coordination",
+    "equipment": "Jump Rope",
+    "difficulty": "Beginner",
+    "cues": [
+      "Land softly on balls of feet, not flat-footed",
+      "Small efficient jumps — just enough to clear the rope",
+      "Keep elbows close to body, wrists do the work",
+      "Look straight ahead, not at your feet",
+      "Start with 30-second intervals if new to jumping"
+    ],
+    "typical_reps": "5-10 minutes or interval sets"
+  },
+  {
+    "name": "Box Jump",
+    "muscle_group": "Quadriceps, Glutes, Calves, Explosiveness",
+    "equipment": "Plyo Box",
+    "difficulty": "Intermediate",
+    "cues": [
+      "Stand arm's length from box",
+      "Quarter squat, swing arms back, then explode up",
+      "Land softly with both feet simultaneously",
+      "Hips and knees bent on landing — absorb impact",
+      "Step down (don't jump down) to protect joints"
+    ],
+    "typical_reps": "3-5 sets of 5-8 reps"
+  },
+  {
+    "name": "Farmers Walk",
+    "muscle_group": "Grip, Traps, Core, Cardiovascular Endurance",
+    "equipment": "Dumbbells or Farmer's Handles",
+    "difficulty": "Beginner",
+    "cues": [
+      "Stand tall, shoulders pulled back and down",
+      "Take short, quick controlled steps",
+      "Brace core as if bracing for a punch",
+      "Don't let the weight pull you to one side",
+      "Excellent full-body finisher or functional strength movement"
+    ],
+    "typical_reps": "3-4 sets of 30-50 meters"
+  },
+  {
+    "name": "Push-Up",
+    "muscle_group": "Pectorals, Anterior Deltoids, Triceps, Core",
+    "equipment": "None (Bodyweight)",
+    "difficulty": "Beginner",
+    "cues": [
+      "Hands slightly wider than shoulder-width",
+      "Body forms a straight line from head to heels",
+      "Lower until chest nearly touches floor",
+      "Elbows at 45-degree angle to torso, not flared out",
+      "Full lockout at the top without losing core tension"
+    ],
+    "typical_reps": "3-4 sets of 10-20 reps"
+  },
+  {
+    "name": "Nordic Curl",
+    "muscle_group": "Hamstrings (Eccentric Strength)",
+    "equipment": "Anchored Foot Pad or Partner",
+    "difficulty": "Advanced",
+    "cues": [
+      "Kneel with feet anchored, body upright",
+      "Lower body toward floor as slowly as possible",
+      "Keep hips extended — don't bend at the hip",
+      "Use hands to catch yourself at the bottom",
+      "Use minimal push from hands to return to start"
+    ],
+    "typical_reps": "3 sets of 4-6 reps (eccentric focused)"
+  }
+]

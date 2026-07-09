@@ -1,0 +1,177 @@
+[
+  {
+    "name": "Dal Tadka",
+    "region": "South Asian",
+    "macros": { "protein": 9, "carbs": 22, "fat": 4, "kcal": 160 },
+    "typical_meal_type": "lunch/dinner",
+    "notes": "Yellow lentil curry tempered with cumin, garlic, and ghee. Rich in plant protein and fiber. Common staple in Indian households."
+  },
+  {
+    "name": "Chicken Biryani",
+    "region": "South Asian",
+    "macros": { "protein": 14, "carbs": 35, "fat": 7, "kcal": 260 },
+    "typical_meal_type": "lunch/dinner",
+    "notes": "Aromatic spiced rice dish with chicken. High in carbohydrates and moderate protein. Often paired with raita for probiotics."
+  },
+  {
+    "name": "Idli",
+    "region": "South Asian",
+    "macros": { "protein": 4, "carbs": 21, "fat": 0.5, "kcal": 105 },
+    "typical_meal_type": "breakfast",
+    "notes": "Steamed rice and lentil cakes. Low fat, easily digestible. Fermented batter improves gut health. Served with sambar and coconut chutney."
+  },
+  {
+    "name": "Paneer Tikka",
+    "region": "South Asian",
+    "macros": { "protein": 18, "carbs": 6, "fat": 14, "kcal": 220 },
+    "typical_meal_type": "snack/dinner",
+    "notes": "Grilled marinated cottage cheese cubes. Excellent high-protein vegetarian option. Good source of calcium. Popular for muscle-building diets."
+  },
+  {
+    "name": "Saag",
+    "region": "South Asian",
+    "macros": { "protein": 5, "carbs": 8, "fat": 3, "kcal": 80 },
+    "typical_meal_type": "lunch/dinner",
+    "notes": "Slow-cooked leafy greens (spinach/mustard). Very low calorie, high in iron, vitamins A, C, K. Excellent for weight loss and micronutrient density."
+  },
+  {
+    "name": "Congee (Rice Porridge)",
+    "region": "East Asian",
+    "macros": { "protein": 3, "carbs": 18, "fat": 0.5, "kcal": 90 },
+    "typical_meal_type": "breakfast",
+    "notes": "Slow-cooked rice gruel, very gentle on digestion. Low calorie but can be enriched with egg or chicken. Popular recovery meal in China, Japan, Korea."
+  },
+  {
+    "name": "Edamame",
+    "region": "East Asian",
+    "macros": { "protein": 11, "carbs": 9, "fat": 5, "kcal": 122 },
+    "typical_meal_type": "snack",
+    "notes": "Young boiled soybeans. Complete plant protein with all essential amino acids. High in folate and fiber. Excellent pre/post-workout snack."
+  },
+  {
+    "name": "Salmon Sashimi",
+    "region": "East Asian",
+    "macros": { "protein": 20, "carbs": 0, "fat": 12, "kcal": 180 },
+    "typical_meal_type": "lunch/dinner",
+    "notes": "Raw salmon slices rich in omega-3 fatty acids (EPA/DHA). Supports heart health, reduces inflammation. High-quality protein for muscle repair."
+  },
+  {
+    "name": "Tofu Stir Fry",
+    "region": "East Asian",
+    "macros": { "protein": 10, "carbs": 8, "fat": 6, "kcal": 130 },
+    "typical_meal_type": "lunch/dinner",
+    "notes": "Firm tofu sautéed with vegetables in soy sauce. Versatile plant-based protein. Contains isoflavones with antioxidant properties."
+  },
+  {
+    "name": "Miso Soup",
+    "region": "East Asian",
+    "macros": { "protein": 3, "carbs": 4, "fat": 1, "kcal": 35 },
+    "typical_meal_type": "breakfast/lunch",
+    "notes": "Fermented soybean paste soup with tofu and seaweed. Rich in probiotics, supports gut microbiome. Very low calorie, excellent as meal accompaniment."
+  },
+  {
+    "name": "Greek Yogurt",
+    "region": "Mediterranean",
+    "macros": { "protein": 10, "carbs": 4, "fat": 2, "kcal": 73 },
+    "typical_meal_type": "breakfast/snack",
+    "notes": "Strained yogurt with twice the protein of regular yogurt. Excellent source of probiotics and calcium. Ideal post-workout or breakfast option."
+  },
+  {
+    "name": "Hummus",
+    "region": "Mediterranean",
+    "macros": { "protein": 5, "carbs": 10, "fat": 6, "kcal": 116 },
+    "typical_meal_type": "snack",
+    "notes": "Blended chickpeas, tahini, lemon, garlic. Plant-based protein and fiber. Anti-inflammatory from olive oil. Great with vegetables or pita."
+  },
+  {
+    "name": "Grilled Octopus",
+    "region": "Mediterranean",
+    "macros": { "protein": 25, "carbs": 2, "fat": 2, "kcal": 130 },
+    "typical_meal_type": "lunch/dinner",
+    "notes": "Lean seafood with exceptionally high protein and very low fat. Rich in vitamin B12, iron, selenium. Excellent for cutting phases."
+  },
+  {
+    "name": "Falafel",
+    "region": "Mediterranean",
+    "macros": { "protein": 13, "carbs": 32, "fat": 18, "kcal": 333 },
+    "typical_meal_type": "lunch/dinner",
+    "notes": "Deep-fried chickpea patties. High in plant protein and fiber but calorie-dense when fried. Baking reduces fat content significantly."
+  },
+  {
+    "name": "Tabbouleh",
+    "region": "Mediterranean",
+    "macros": { "protein": 3, "carbs": 12, "fat": 4, "kcal": 95 },
+    "typical_meal_type": "lunch",
+    "notes": "Parsley-based salad with bulgur wheat, tomato, lemon. Rich in vitamin K, C, and antioxidants. Very low calorie, high in fiber."
+  },
+  {
+    "name": "Black Beans and Rice",
+    "region": "Latin American",
+    "macros": { "protein": 8, "carbs": 38, "fat": 1, "kcal": 200 },
+    "typical_meal_type": "lunch/dinner",
+    "notes": "Staple pairing across Latin America. Black beans provide complete amino acids when combined with rice. Excellent budget-friendly muscle fuel."
+  },
+  {
+    "name": "Ceviche",
+    "region": "Latin American",
+    "macros": { "protein": 18, "carbs": 5, "fat": 2, "kcal": 110 },
+    "typical_meal_type": "lunch",
+    "notes": "Raw fish marinated in citrus juice. Very high protein, extremely low fat. Rich in vitamin C from lime. Great for fat-loss diets."
+  },
+  {
+    "name": "Churrasco (Grilled Beef)",
+    "region": "Latin American",
+    "macros": { "protein": 26, "carbs": 0, "fat": 15, "kcal": 240 },
+    "typical_meal_type": "dinner",
+    "notes": "Brazilian-style grilled beef cuts. High-quality complete protein, rich in creatine, zinc, iron. Ideal for bulking and strength athletes."
+  },
+  {
+    "name": "Quinoa Bowl",
+    "region": "Latin American",
+    "macros": { "protein": 8, "carbs": 39, "fat": 4, "kcal": 222 },
+    "typical_meal_type": "lunch",
+    "notes": "Andean grain that is a complete protein with all 9 amino acids. Gluten-free. High in manganese, phosphorus, folate. Excellent for vegetarians."
+  },
+  {
+    "name": "Arepas",
+    "region": "Latin American",
+    "macros": { "protein": 4, "carbs": 30, "fat": 2, "kcal": 155 },
+    "typical_meal_type": "breakfast/snack",
+    "notes": "Colombian/Venezuelan cornmeal flatbreads. Gluten-free carb source. Customizable with protein fillings like chicken or beans for balanced meals."
+  },
+  {
+    "name": "Jollof Rice",
+    "region": "West African",
+    "macros": { "protein": 5, "carbs": 40, "fat": 6, "kcal": 230 },
+    "typical_meal_type": "lunch/dinner",
+    "notes": "Tomato-based one-pot rice dish popular across West Africa. Good carbohydrate source. Served with chicken or fish for a complete meal."
+  },
+  {
+    "name": "Egusi Soup",
+    "region": "West African",
+    "macros": { "protein": 12, "carbs": 10, "fat": 20, "kcal": 260 },
+    "typical_meal_type": "lunch/dinner",
+    "notes": "Ground melon seed soup with leafy greens. High in plant protein and healthy fats. Rich in vitamins A, C, iron. Served with fufu or rice."
+  },
+  {
+    "name": "Suya (Grilled Spiced Beef)",
+    "region": "West African",
+    "macros": { "protein": 28, "carbs": 3, "fat": 10, "kcal": 215 },
+    "typical_meal_type": "snack/dinner",
+    "notes": "Skewered beef rubbed with groundnut spice mix. Very high protein, lean cut with moderate fat. Popular street food; excellent post-workout meal."
+  },
+  {
+    "name": "Plantain (Boiled)",
+    "region": "West African",
+    "macros": { "protein": 1, "carbs": 28, "fat": 0.2, "kcal": 116 },
+    "typical_meal_type": "breakfast/side",
+    "notes": "Starchy fruit rich in potassium, vitamin C, B6. Natural complex carbohydrate. Boiled is healthier than fried. Good pre-workout energy source."
+  },
+  {
+    "name": "Akara (Bean Fritters)",
+    "region": "West African",
+    "macros": { "protein": 10, "carbs": 20, "fat": 8, "kcal": 190 },
+    "typical_meal_type": "breakfast/snack",
+    "notes": "Deep-fried black-eyed pea fritters. Plant-based protein. High in folate and iron. Popular Nigerian breakfast. Baking reduces calorie count."
+  }
+]
