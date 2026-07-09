@@ -530,6 +530,10 @@ Region: {user_row['region']}
 - Always include a general disclaimer advising the user to consult a doctor before starting any intense new fitness or diet program.
 """
 
+    onboarding_chunks_str = "\n".join(
+        [f"[{i}] {c['document']}" for i, c in enumerate(rag_chunks, 1)]
+    ) if rag_chunks else "No specific knowledge retrieved."
+
     system_prompt = f"""You are FitRAG, an expert AI fitness and nutrition coach.
 You are generating a personalized onboarding plan for the user.
 
@@ -537,7 +541,7 @@ You are generating a personalized onboarding plan for the user.
 {profile_summary}
 
 ## Retrieved Knowledge (use these facts to ground your plan)
-{'\n'.join([f"[{i}] {c['document']}" for i, c in enumerate(rag_chunks, 1)])}
+{onboarding_chunks_str}
 
 ## Instructions
 - Give a warm, brief welcome referencing the user's name, BMI category, and goal.
@@ -547,7 +551,9 @@ You are generating a personalized onboarding plan for the user.
 - Keep the response concise, engaging, and professional (under 350 words).
 """
 
+
     # ── 4. Call Groq ───────────────────────────────────────────────────────────
+
     groq = get_groq()
     def call_groq():
         return groq.chat.completions.create(
