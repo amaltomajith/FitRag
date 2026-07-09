@@ -3,12 +3,14 @@
 
 [phases.setup]
 nixPkgs = ["python311"]
+aptPkgs = ["libgomp1"]
 
 [phases.install]
 cmds = [
   "python3 -m venv /app/.venv",
   "/app/.venv/bin/pip install --upgrade pip",
-  "/app/.venv/bin/pip install -r backend/requirements.txt"
+  "/app/.venv/bin/pip install -r backend/requirements.txt",
+  "/app/.venv/bin/python -c 'from chromadb.utils import embedding_functions; embedding_functions.ONNXMiniLM_L6_V2()'"
 ]
 
 [start]
