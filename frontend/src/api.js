@@ -1,7 +1,10 @@
 // In dev, VITE_API_URL is empty and Vite's proxy forwards /api/* → localhost:8000
 // In production, set VITE_API_URL to your Railway backend URL in Vercel env vars
 // e.g. VITE_API_URL=https://fitrag-backend.up.railway.app
-const BASE = import.meta.env.VITE_API_URL ?? ''
+let BASE = import.meta.env.VITE_API_URL ?? ''
+if (BASE.endsWith('/')) {
+  BASE = BASE.slice(0, -1)
+}
 
 async function handleResponse(res) {
   if (!res.ok) {
