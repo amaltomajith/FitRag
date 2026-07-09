@@ -6,7 +6,7 @@ from pathlib import Path
 # Ensure the backend directory is in Python path
 sys.path.insert(0, str(Path(__file__).parent))
 
-from sentence_transformers import SentenceTransformer
+from chromadb.utils import embedding_functions
 import chromadb
 
 # ── Paths ──────────────────────────────────────────────────────────────────────
@@ -45,7 +45,7 @@ def ingest_collection(
     collection_name: str,
     entries: list[dict],
     chunk_fn,
-    model: SentenceTransformer,
+    ef,
 ) -> None:
     """Embed entries and upsert into a Chroma collection."""
     collection = client.get_or_create_collection(
@@ -68,8 +68,8 @@ def ingest_collection(
         metadatas.append({"source_json": json.dumps(entry, ensure_ascii=False)})
 
     print(f"[ingest] Embedding {len(documents)} chunks for collection '{collection_name}' ...")
-    vecs = model.encode(documents, show_progress_bar=True)
-    embeddings = [v.tolist() for v in vecs]
+    vecs = ef(documents)
+    embeddings = [[float(x) for x in v] for v in vecs]
 
     collection.upsert(
         ids=ids,
@@ -81,9 +81,9 @@ def ingest_collection(
 
 
 def main():
-    print("[ingest] Loading sentence-transformer model 'all-MiniLM-L6-v2' ...")
-    model = SentenceTransformer("all-MiniLM-L6-v2")
-    print("[ingest] Model loaded.\n")
+    print("[ingest] Loading ONNX embedding function ...")
+    ef = embedding_functions.ONNXMiniLM_L6_V2()
+    print("[ingest] Embedding function loaded.\n")
 
     print(f"[ingest] Opening Chroma persistent client at {DB_DIR} ...")
     DB_DIR.mkdir(parents=True, exist_ok=True)
@@ -92,12 +92,12 @@ def main():
     # ── Foods ──────────────────────────────────────────────────────────────────
     with open(FOODS_FILE, encoding="utf-8") as f:
         foods = json.load(f)
-    ingest_collection(client, "foods", foods, make_food_chunk, model)
+    ingest_collection(client, "foods", foods, make_food_chunk, ef)
 
     # ── Exercises ──────────────────────────────────────────────────────────────
     with open(EXERCISES_FILE, encoding="utf-8") as f:
         exercises = json.load(f)
-    ingest_collection(client, "exercises", exercises, make_exercise_chunk, model)
+    ingest_collection(client, "exercises", exercises, make_exercise_chunk, ef)
 
     print("[ingest] All done! ChromaDB is ready.")
 

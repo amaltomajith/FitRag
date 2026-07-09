@@ -26,7 +26,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from openai import OpenAI
 from pydantic import BaseModel
-from sentence_transformers import SentenceTransformer
+from chromadb.utils import embedding_functions
 
 from media import search_youtube
 
@@ -101,18 +101,18 @@ def init_db() -> None:
 
 # ── Global singletons (loaded once at startup) ─────────────────────────────────
 
-_embedding_model: Optional[SentenceTransformer] = None
+_embedding_ef = None
 _chroma_client: Optional[chromadb.PersistentClient] = None
 _groq_client: Optional[OpenAI] = None
 
 
-def get_embedding_model() -> SentenceTransformer:
-    global _embedding_model
-    if _embedding_model is None:
-        print("[startup] Loading sentence-transformer ...")
-        _embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
-        print("[startup] Embedding model ready.")
-    return _embedding_model
+def get_embedding_function():
+    global _embedding_ef
+    if _embedding_ef is None:
+        print("[startup] Loading ONNX embedding function ...")
+        _embedding_ef = embedding_functions.ONNXMiniLM_L6_V2()
+        print("[startup] Embedding function ready.")
+    return _embedding_ef
 
 
 def get_chroma() -> chromadb.PersistentClient:
@@ -137,7 +137,7 @@ def get_groq() -> OpenAI:
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     init_db()
-    get_embedding_model()   # warm up model at startup
+    get_embedding_function()   # warm up model at startup
     get_chroma()
     yield
 
@@ -192,8 +192,9 @@ class ChatRequest(BaseModel):
 # ── Utility functions ──────────────────────────────────────────────────────────
 
 def embed(text: str) -> list[float]:
-    model = get_embedding_model()
-    return model.encode([text])[0].tolist()
+    ef = get_embedding_function()
+    # ef([text]) returns a list of embeddings. Convert to standard list of floats.
+    return [float(x) for x in ef([text])[0]]
 
 
 def detect_intent(message: str) -> tuple[bool, bool]:
